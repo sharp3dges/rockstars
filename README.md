@@ -45,6 +45,8 @@ For state management I chose to use my own implementation of the BloC pattern in
 As Redux usually needs a lot of extra work and is slower than the Bloc Pattern.
 Furthermore I especially like it's testability and further separation of concerns.
 
+![Image of BlocPattern](https://raw.githubusercontent.com/sharp3dges/rockstars/master/BlocPattern.png)
+
 ## What's in it
 I must first state 4 hours just isn't a lot of time, so I had to work very hard to get as many things implemented in the way I wanted to.
 
