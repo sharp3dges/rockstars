@@ -1,6 +1,6 @@
 # RockStar Project
 
-##Setup
+## Setup
 
 Clone Project:
 
