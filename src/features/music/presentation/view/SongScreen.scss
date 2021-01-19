@@ -1,0 +1,9 @@
+@import "../../../../theme/variables";
+
+.screen.song-screen {
+  background-color: #FFFFFF;
+  flex: 1;
+
+  max-height: calc(100vh - #{$header-height});
+  overflow-y: auto;
+}

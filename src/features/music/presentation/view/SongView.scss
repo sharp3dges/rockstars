@@ -1,0 +1,32 @@
+.song-view {
+
+  padding: 2em 1em;
+
+  display: flex;
+  flex-wrap: wrap;
+
+  table {
+    margin-bottom: 2em;
+    margin-right: 2em;
+  }
+
+  table tr {
+    td:first-child {
+      width: 30vw;
+      max-width: 250px;
+    }
+    td:last-child {
+      width: 30vw;
+      max-width: 250px;
+      text-align: end;
+    }
+  }
+
+  &:not(:last-child) {
+    border-bottom: 1px solid #000;
+  }
+
+  @media screen and (max-width: 899px) {
+    justify-content: center;
+  }
+}

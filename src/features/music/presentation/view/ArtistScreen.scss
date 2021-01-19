@@ -1,0 +1,56 @@
+@import "../../../../theme/variables";
+.screen.artist-screen {
+  display: flex;
+  flex-direction: column;
+  flex: 1;
+
+  input[type=text] {
+    margin-left: 1em;
+  }
+
+  .list-view {
+    flex: 1 1 auto;
+    max-height: calc(100vh - #{$header-height} - 100px);
+    overflow-y: auto;
+    padding: 0 1em;
+
+    .no-results {
+      padding: 1em;
+      align-self: center;
+      color: #FFFFFF;
+    }
+  }
+
+  .paging-buttons {
+    height: 60px;
+    display: flex;
+    align-items: center;
+
+    .paging-button {
+      margin: 0 20px;
+      width: 20px;
+      height: 30px;
+
+      cursor: pointer;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #FFFFFF;
+
+      transition: background-color 100ms linear;
+
+      &.current {
+        font-weight: bold;
+        transform: scale(1.05, 1.05);
+        border-bottom: 1px solid #FFFFFF;
+        cursor: default;
+      }
+
+      &:not(.current):hover {
+        background-color: #999999;
+        transform: scale(1.1, 1.1);
+      }
+    }
+  }
+}

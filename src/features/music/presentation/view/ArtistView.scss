@@ -1,0 +1,38 @@
+@import "../../../../theme/colors";
+
+.artist-view {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  color: #FFFFFF;
+  cursor: pointer;
+
+  transition: padding-left 100ms ease-in, background-color 100ms ease-in;
+
+  &:not(:last-child) {
+    border-bottom: 1px solid $color-white;
+  }
+
+  .artist-identifier {
+    padding: 1em 0;
+    margin: 0;
+    width: 70px;
+  }
+
+  .artist-name {
+    padding: 1em 0;
+    margin: 0;
+    flex: 1;
+  }
+
+  svg {
+    margin-right: 4px;
+  }
+
+  &:hover {
+    padding-left: 2em;
+    background-color: #919191;
+  }
+
+}

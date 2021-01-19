@@ -1,0 +1,38 @@
+[
+  {
+    "id": 6,
+    "name": "Attack",
+    "year": 2005,
+    "artist": "30 Seconds to Mars",
+    "shortname": "attack",
+    "bpm": 175,
+    "duration": 191313,
+    "genre": "Emo",
+    "spotifyId": "0lHSJ0ZP8uUPnJXhMdGjOK",
+    "album": "A Beautiful Lie"
+  },
+  {
+    "id": 3,
+    "name": "Closer to the Edge",
+    "year": 2009,
+    "artist": "30 Seconds to Mars",
+    "shortname": "closertotheedge",
+    "bpm": 140,
+    "duration": 258850,
+    "genre": "Emo",
+    "spotifyId": "0UZwcRQAk4QR09HtGRZhYC",
+    "album": "This Is War"
+  },
+  {
+    "id": 7,
+    "name": "The Kill",
+    "year": 2005,
+    "artist": "30 Seconds to Mars",
+    "shortname": "thekill",
+    "bpm": 91,
+    "duration": 248852,
+    "genre": "Emo",
+    "spotifyId": "0lP4HYLmvowOKdsQ7CVkuq",
+    "album": "A Beautiful Lie"
+  }
+]

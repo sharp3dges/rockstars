@@ -1,0 +1,52 @@
+@import "theme/fonts";
+@import "theme/form";
+
+* {
+  box-sizing: border-box;
+}
+
+html, body, #root {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+body {
+  margin: 0;
+}
+
+#root {
+  display: flex;
+  flex-direction: column;
+}
+
+body, p {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  font-family: 'Barlow', sans-serif;
+  @include font-size(12px, 16px);
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: 'Zuume-Bold', sans-serif;
+}
+
+h1 {
+  @include font-size(50px, 70px);
+}
+
+h2 {
+  @include font-size(32px, 45px);
+}
+
+h3 {
+  @include font-size(24px, 32px);
+}
+
+h4 {
+  @include font-size(18px, 24px);
+}
+
+h5 {
+  @include font-size(15px, 20px);
+}

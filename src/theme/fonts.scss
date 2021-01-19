@@ -1,0 +1,50 @@
+// ============================================================
+// Import Fonts
+// ============================================================
+
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+@font-face {
+  font-family: 'Zuume-Bold';
+  src: local('Zuume Bold'), local('Zuume-Bold'),
+  url('Zuume-Bold.woff2') format('woff2'),
+  url('Zuume-Bold.woff') format('woff'),
+  url('Zuume-Bold.ttf') format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}
+
+// ============================================================
+// Font size mixin => DownScales fonts on smaller devices
+// ============================================================
+
+//  default font scale bounding
+$font-lock-min:  400px !default;
+$font-lock-max: 1000px !default;
+
+//  strip units helper function
+@function num($input){  @return $input/($input * 0 + 1); }
+
+//  font-size
+@mixin font-size(
+  $min,                         // font-size
+  $max: null,                   // optional maximum font size
+  $lock-min: $font-lock-min,  // optional minimum viewport width
+  $lock-max: $font-lock-max   // optional maximum viewport width
+){
+  & { font-size: $min; }
+  @if $max {
+    @media (min-width: $lock-min) and (max-width: $lock-max){
+      & {
+        font-size: calc(
+                #{$min} +
+                #{num($max) - num($min)} *
+                (100vw - #{$lock-min}) /
+                #{num($lock-max) - num($lock-min)}
+        );
+      }
+    }
+    @media (min-width: $lock-max){
+      & { font-size: $max; }
+    }
+  }
+}
