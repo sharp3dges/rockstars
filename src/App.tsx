@@ -17,6 +17,9 @@ const App = () => {
                     <Route exact path="/">
                         <ArtistScreen/>
                     </Route>
+                    <Route exact path="/callback">
+                        <ArtistScreen/>
+                    </Route>
                     <Route path="/artist/:id">
                         <SongScreen/>
                     </Route>

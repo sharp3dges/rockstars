@@ -22,11 +22,7 @@ class SpotifyRepository implements ISpotifyRepository {
         }
 
         const client_id = 'dd9576d95da74f46b10f49de60f879fb';
-        const { protocol, hostname, port } = window.location;
-        const redirect_uri = `${protocol}://${hostname}:${port}/callback`;
-
-
-        console.log(window.location.protocol);
+        const redirect_uri = `http://localhost:3000/callback`;
 
         const state = SpotifyRepository.generateRandomString(16);
         const scope = 'user-read-private user-read-email playlist-read-private';
