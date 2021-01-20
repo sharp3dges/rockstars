@@ -4,7 +4,7 @@
 
 Clone Project:
 
-`git clone git@github.com:sharp3dges/rockstars.git`
+`git clone https://github.com/sharp3dges/rockstars.git`
 
 Install node modules:
 `cd rockstars && npm i`
